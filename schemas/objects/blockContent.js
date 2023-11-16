@@ -9,6 +9,7 @@
  *  }
  */
 import React from 'react';
+import podcastPlayer from './podcastPlayer';
 
 const smallRender = (props) => <small style={{ color: '#666' }}>{props.children}</small>;
 
@@ -93,6 +94,11 @@ export default {
 					},
 				},
 			],
+		},
+		{
+			name: 'podcastPlayer',
+			title: 'Podcast Player',
+			type: 'podcastPlayer',
 		},
 	],
 };

@@ -2,6 +2,9 @@ export default {
 	name: 'article',
 	title: 'Article',
 	type: 'document',
+	initialValue: {
+		isPodcast: false,
+	},
 	fields: [
 		{
 			name: 'title',
@@ -16,6 +19,13 @@ export default {
 				source: 'title',
 				maxLength: 96,
 			},
+		},
+		{
+			name: 'isPodcast',
+			title: 'Is this article about a podcast episode?',
+			description: 'This toggle will enable comments on this page',
+			type: 'boolean',
+			initialValue: false,
 		},
 		{
 			name: 'lede',

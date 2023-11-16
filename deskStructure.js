@@ -16,6 +16,7 @@ const hiddenDocTypes = (listItem) =>
 		'author',
 		'category',
 		'privacyPolicy',
+		'givingBack',
 	].includes(listItem.getId());
 
 export default () =>
@@ -26,6 +27,7 @@ export default () =>
 			S.documentListItem().id('about').schemaType('about').title('About'),
 			S.documentListItem().id('team').schemaType('team').title('Team'),
 			S.documentListItem().id('news').schemaType('news').title('News'),
+			S.documentListItem().id('givingBack').schemaType('givingBack').title('Giving Back'),
 			S.documentListItem().id('faq').schemaType('faq').title('FAQ'),
 			S.documentListItem().id('contact').schemaType('contact').title('Contact'),
 			S.documentListItem().id('privacyPolicy').schemaType('privacyPolicy').title('Privacy Policy'),

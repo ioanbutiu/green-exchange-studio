@@ -14,6 +14,7 @@ import news from './documents/news';
 import faq from './documents/faq';
 import contact from './documents/contact';
 import privacyPolicy from './documents/privacyPolicy';
+import givingBack from './documents/givingBack';
 
 import page from './documents/page';
 import category from './documents/category';
@@ -31,6 +32,7 @@ import textGridItem from './objects/textGridItem';
 import textSection from './objects/textSection';
 import cta from './objects/cta';
 import iconRowItem from './objects/iconRowItem';
+import podcastPlayer from './objects/podcastPlayer';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -52,6 +54,7 @@ export default createSchema({
 		author,
 		category,
 		privacyPolicy,
+		givingBack,
 		// When added to this list, object types can be used as
 		// { type: 'typename' } in other document schemas
 		hero,
@@ -64,5 +67,6 @@ export default createSchema({
 		textSection,
 		cta,
 		iconRowItem,
+		podcastPlayer,
 	]),
 });
