@@ -27,6 +27,7 @@ export default {
 				{ type: 'news' },
 				{ type: 'faq' },
 				{ type: 'contact' },
+				{ type: 'article' },
 			],
 			fieldset: 'link',
 		},
