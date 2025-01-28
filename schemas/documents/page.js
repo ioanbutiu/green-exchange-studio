@@ -21,10 +21,10 @@ export default {
 			of: [
 				{ type: 'hero' },
 				{ type: 'imageSection' },
-				{ type: 'iconRow' },
+				//{ type: 'iconRow' },
 				{ type: 'imageWide' },
-				{ type: 'joinUs' },
-				{ type: 'newsletter' },
+				//{ type: 'joinUs' },
+				//{ type: 'newsletter' },
 			],
 			options: {
 				editModal: 'popover',

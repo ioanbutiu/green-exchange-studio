@@ -23,7 +23,7 @@ export default {
 			return {
 				title: title,
 				subtitle: 'Podcast Player',
-				media: <PlayIcon />,
+				media: PlayIcon,
 			};
 		},
 	},

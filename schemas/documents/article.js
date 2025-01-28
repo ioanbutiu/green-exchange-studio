@@ -5,6 +5,7 @@ export default {
 	initialValue: {
 		isPodcast: false,
 	},
+	fieldsets: [{ name: 'download', title: 'Download Button' }],
 	fields: [
 		{
 			name: 'title',
@@ -73,8 +74,26 @@ export default {
 			title: 'Body',
 			type: 'blockContent',
 		},
+		{
+			name: 'downloadTitle',
+			title: 'Button Text',
+			description: 'The text that will appear on the download button. Defaults to "Download PDF."',
+			type: 'string',
+			fieldset: 'download',
+			initialValue: 'Download PDF',
+		},
+		{
+			name: 'downloadFile',
+			title: 'PDF File',
+			description: 'Upload a file here to make the download button appear on the site.',
+			type: 'file',
+			fieldset: 'download',
+		},
 	],
-
+	initialValue: {
+		isPodcast: false,
+		downloadTitle: 'Download PDF',
+	},
 	preview: {
 		select: {
 			title: 'title',
