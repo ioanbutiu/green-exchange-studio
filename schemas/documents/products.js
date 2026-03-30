@@ -1,6 +1,6 @@
 export default {
-	name: 'trading',
-	title: 'Trading',
+	name: 'products',
+	title: 'Products',
 	type: 'document',
 	fieldsets: [
 		{
@@ -21,16 +21,23 @@ export default {
 			type: 'hero',
 		},
 		{
-			name: 'content',
-			type: 'array',
-			of: [{ type: 'block' }],
+			name: 'threeColumnSection',
+			title: 'Three Column Section',
+			type: 'threeColumnSection',
 		},
 		{
-			name: 'modules',
-			title: 'Regulation Modules',
-			type: 'array',
-			of: [{ type: 'regulationModule' }, { type: 'sectionHeading' }],
-			description: 'Add modules containing regulation items for the trading page',
+			name: 'productAccordion',
+			title: 'Product Accordion',
+			type: 'productAccordion',
+		},
+		{
+			name: 'productAccordion2',
+			title: 'Product Accordion 2',
+			type: 'productAccordion',
+		},
+		{
+			name: 'disclaimer',
+			type: 'text',
 		},
 		{
 			name: 'description',
