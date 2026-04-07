@@ -17,7 +17,7 @@ import listing from "./documents/listing";
 import trading from "./documents/trading";
 import regulatory from "./documents/regulatory";
 import teamMemberDoc from "./documents/teamMember";
-import traderAlerts from "./documents/traderAlerts";
+import traderUpdates from "./documents/traderUpdates";
 
 // Object schemas
 import blockContent from "./objects/blockContent";
@@ -59,7 +59,7 @@ export const schemaTypes = [
   page,
   listing,
   trading,
-  traderAlerts,
+  traderUpdates,
   regulatory,
   teamMemberDoc,
   // Object types

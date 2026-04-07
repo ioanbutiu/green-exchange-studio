@@ -8,8 +8,8 @@ const categories = [
 ];
 
 export default defineType({
-  name: "traderAlerts",
-  title: "Trader Alerts",
+  name: "traderUpdates",
+  title: "Trader Updates",
   type: "document",
   fields: [
     defineField({
@@ -23,7 +23,7 @@ export default defineType({
       title: "Published Date",
       type: "datetime",
       description:
-        "The date and time when the alert was published. This is for display purposes only, but should reflect the actual publication time.",
+        "The date and time when the update was published. This is for display purposes only, but should reflect the actual publication time.",
       validation: (Rule) => Rule.required(),
     }),
     defineField({
@@ -37,7 +37,7 @@ export default defineType({
     }),
     defineField({
       name: "body",
-      title: "Alert Content",
+      title: "Update Content",
       type: "array",
       of: [{ type: "block" }],
       validation: (Rule) => Rule.required(),
